@@ -1,46 +1,29 @@
-:root{--navy:#14213d;--navy2:#22335a;--amber:#e5a823;--bg:#f3f5f8;--ink:#1c2433;--muted:#5b6678;--line:#d9dee7}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--bg)}
-h1,h2,h3{font-family:"Archivo",system-ui,sans-serif;line-height:1.15;margin:0 0 .5rem}
-a{color:var(--navy2)}
-a:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
-header.site{background:var(--navy);padding:.9rem 1.25rem;display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between;align-items:center}
-header.site .logo{font-family:"Archivo",sans-serif;font-weight:800;color:#fff;text-decoration:none;font-size:1.15rem}
-header.site .logo span{color:var(--amber)}
-nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
-nav a{color:#cfd7e6;text-decoration:none;padding:.25rem 0;border-bottom:3px solid transparent}
-nav a:hover{color:#fff}
-nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--amber)}
-.hero{background:var(--navy);color:#fff;padding:3.5rem 1.25rem 0}
-.hero .inner,main{max-width:780px;margin:0 auto}
-.hero h1{font-size:clamp(2.4rem,7vw,4rem);font-weight:800;letter-spacing:-.02em}
-.hero .role{font-size:1.2rem;color:#e6ebf5;margin:0}
-.hero .seek{color:var(--amber);font-weight:600;margin:.5rem 0 0}
-.wave{display:block;width:100%;height:70px;margin-top:2.5rem}
-main{padding:2.5rem 1.25rem 4rem}
-main h2{font-size:1.6rem;margin-top:2.5rem;padding-left:.75rem;border-left:6px solid var(--amber)}
-main h2:first-child{margin-top:0}
-.page-title{font-size:2.2rem;font-weight:800;margin-bottom:.25rem}
-.lead{color:var(--muted);margin-top:0}
-.tl{list-style:none;margin:1rem 0 0;padding:0 0 0 1.25rem;border-left:2px solid var(--line)}
-.tl li{position:relative;margin-bottom:1.25rem}
-.tl li::before{content:"";position:absolute;left:-1.78rem;top:.5rem;width:.7rem;height:.7rem;border-radius:50%;background:var(--amber)}
-.tl .date{font-weight:700;font-size:.95rem;color:var(--navy2);display:block}
-.tl .where,.meta{color:var(--muted);font-style:italic;margin:0}
-.skills{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.skills div{background:#fff;border:1px solid var(--line);border-radius:6px;padding:1rem}
-.skills h3{font-size:1rem}
-.skills p{margin:0}
-.item{background:#fff;border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:6px;padding:1.25rem 1.5rem;margin-bottom:1.5rem}
-.item h2{border:0;padding:0;margin:0 0 .25rem;font-size:1.3rem}
-.item ul{margin:.75rem 0 0;padding-left:1.2rem}
-.tag{display:inline-block;background:var(--amber);color:var(--navy);font-weight:700;font-size:.85rem;padding:.1rem .6rem;border-radius:99px;margin-bottom:.5rem}
-.btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;font-weight:600;padding:.7rem 1.4rem;border-radius:6px;margin:.25rem .5rem .25rem 0}
-.btn:hover{background:var(--navy2)}
-.btn.alt{background:var(--amber);color:var(--navy)}
-.contact-list{list-style:none;padding:0;margin:1.5rem 0}
-.contact-list li{padding:.8rem 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:.25rem 1.5rem}
-.contact-list strong{min-width:110px}
-footer{text-align:center;color:var(--muted);font-size:.9rem;padding:1.5rem}
-@media (prefers-reduced-motion:no-preference){.wave path{stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 2.2s ease-out forwards}@keyframes draw{to{stroke-dashoffset:0}}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marie Dupont – Portfolio</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
+    h1 { margin-bottom: 0; }
+    .projet { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Marie Dupont</h1>
+  <p>Étudiante en développement web</p>
+
+  <h2>À propos</h2>
+  <p>Quelques lignes pour vous présenter.</p>
+
+  <h2>Projets</h2>
+  <div class="projet">
+    <h3>Mon premier projet</h3>
+    <p>Description courte. <a href="#">Voir le projet</a></p>
+  </div>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:vous@exemple.fr">vous@exemple.fr</a></p>
+</body>
+</html>
